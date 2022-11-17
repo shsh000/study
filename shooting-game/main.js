@@ -53,8 +53,8 @@ function Enemy() {
     this.x = 0;
     this.y = 0;
     this.init = function () { // 적군 위치 초기화
-        this.y = 0;
-        this.x = generateRandomValue(0, canvas.width - 48);
+        this.y = 0; // 맨 위에서부터 내려옴
+        this.x = generateRandomValue(0, canvas.width - 48); // x좌표의 위치는 랜덤으로 뜨도록함
         enemyList.push(this);
     };
     this.update = function () {
@@ -201,4 +201,4 @@ main();
 // 3. 적군은 밑으로 내려옴 == y좌표 증가
 // 4. 1초마다 하나씩 적군이 내려옴
 // 5. 적군이 캔버스의 바닥에 닿으면 게임 오버
-// 6. 적군과 총알이 만나면 적군이 사라지고 점수 1첨 획득
+// 6. 적군과 총알이 만나면 적군이 사라지고 점수 1점 획득
