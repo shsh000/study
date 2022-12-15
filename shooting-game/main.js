@@ -58,7 +58,7 @@ function Enemy() {
         enemyList.push(this);
     };
     this.update = function () {
-        this.y += 2; // 적군의 속도 조절
+        this.y += 4; // 적군의 속도 조절
 
         if (this.y >= canvas.height - 48) {
             gameOver = true;
