@@ -78,13 +78,49 @@ import AttendanceBook from './chapter_10/AttendanceBook';
 //     );
 
 import SignUp from './chapter_11/SignUp';
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <React.StrictMode>
+//       <SignUp />
+//     </React.StrictMode>,
+//     document.getElementById('root')
+//     );
+    
+import Calculator from './chapter_12/Calculator';
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <React.StrictMode>
+//       <Calculator />
+//     </React.StrictMode>,
+//     document.getElementById('root')
+//     );
+
+import ProfileCard from './chapter_13/ProfileCard';
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <React.StrictMode>
+//       <ProfileCard />
+//     </React.StrictMode>,
+//     document.getElementById('root')
+//     );
+    
+import DarkOrLight from './chapter_14/DarkOrLight';
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <React.StrictMode>
+//     <DarkOrLight />
+//   </React.StrictMode>,
+//   document.getElementById('root')
+//   );   
+  
+import Blocks from './chapter_15/Blocks';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-      <SignUp />
-    </React.StrictMode>,
-    document.getElementById('root')
-    );
+    <Blocks />
+  </React.StrictMode>,
+  document.getElementById('root')
+  ); 
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
