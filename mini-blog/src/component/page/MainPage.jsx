@@ -28,7 +28,7 @@ const Container = styled.div`
 function MainPage(props) {
     const {} = props;
 
-    const navigate = useNavigate;
+    const navigate = useNavigate();
 
     return (
         <Wrapper>
@@ -40,12 +40,12 @@ function MainPage(props) {
                     }}
                 />
 
-                <PostList>
+                <PostList
                     posts={data}
                     onClickItem={(item) => {
                         navigate(`/post/${item.id}`);
                     }}
-                </PostList>
+                />
             </Container>
         </Wrapper>
     );
